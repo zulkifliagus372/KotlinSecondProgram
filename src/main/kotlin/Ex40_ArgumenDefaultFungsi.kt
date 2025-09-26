@@ -1,19 +1,16 @@
 package org.example
 
 fun main(args: Array<String>) {
-    cunnectToDb()
+    //panggil tanpa argumen
+    connectToDb()
     println()
-
-    connectToDb("sqlserver", "Zulkifli agus")
-}
-
-fun cunnectToDb() {
-    TODO("Not yet implemented")
+    //panggil dengan 2 argumen
+    connectToDb("sqlserver", "zulkifli agus")
 }
 
 fun connectToDb(hostname: String = "localhost",
                 username: String = "mysql",
-                password: String = "secret") {
+                password:String = "secret") {
     println("hostname : $hostname")
     println("username : $username")
     println("password : $password")
